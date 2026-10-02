@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000000;
+    color: #fdfdfd;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border: 3px solid #333;
+    background-color: #dbe2e6;
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    border-radius: 8px 8px 0 0;
+
+
+}
+
+.score {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    z-index: 2;
+    padding: 10px 14px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #fdfdfd;
+    font-family: "Press Start 2P", monospace;
+    font-size: 0.8rem;
+}
+
+.player {
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+    width: 80px;
+    height: 100px;
+    background-image: url('assets/dino.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    transform: scaleX(-1);
+    border-radius: 8px 8px 0 0;
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 50px;
+    background-image: url('assets/rock.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    border-radius: 8px 8px 0 0;
+
+}
+
+
+.restartBtn {
+    font-family: "Press Start 2P", monospace;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    border-style: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.gameOverText {
+    font-family: "Press Start 2P", monospace;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    font-size: 4rem;
+    color: #000000;
+}
